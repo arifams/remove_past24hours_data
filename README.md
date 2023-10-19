@@ -30,4 +30,15 @@ Read this [Lazy Admin - How to Create a PowerShell Scheduled Task](https://lazya
 
 
 
+### Error and Solution ###
+
+Error 1: ``File C:\powershellscript\remove_past_24hours_data.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.  + CategoryInfo : SecurityError: (:) [], ParentContainsErrorRecordException  + FullyQualifiedErrorId : UnauthorizedAccess ``
+
+Solution 1: 
+- Open Powershell
+- Give access to Local User to execute local user `` Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser ``
+
+
+
+
 
